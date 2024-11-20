@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Creation Page</title>
+    <link rel="stylesheet" href="account.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2>Create Account</h2>
+            <p>Fill in the details to get started</p>
+        </header>
+        <form class="content-form">
+            <label for="name" class="label"><b>Full Name</b> <span class="required">*</span></label>
+            <br>
+            <input type="text" name="name" id="name" required placeholder="John Doe">
+            <br>
+            <br>
+            <label for="email" class="label"><b>Email Address</b> <span class="required">*</span></label>
+            <br>
+            <input type="email" name="email" id="email" required placeholder="you@example.com">
+            <br>
+            <br>
+            <label for="pswd" class="label"><b>Password</b> <span class="required">*</span></label>
+            <br>
+            <input type="password" name="pswd" id="pswd" required min="8">
+            <br>
+            <span class="passcap">Must be at least 8 characters long</span>
+            <br>
+            <br>
+            <label class="label" for="role"><b>Role</b></label>
+            <br>
+            <select name="role" id="role">
+                <option value="manager">Manager</option>
+                <option value="accountant">Accountant</option>
+                <option value="employee">Employee</option>
+            </select>
+            <br>
+            <br>
+            <label for="bio" class="label"><b>Bio</b></label>
+            <br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about yourself"></textarea>
+            <br>
+            <span class="biocap">Keep it short and sweet</span>
+            <br>
+            <br>
+            <input type="checkbox" name="chkbox" id="chkbox" value="agree" required>
+            <label for="chkbox">I agree to the terms and conditions <span class="required">*</span></label>
+            <br>
+            <br>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+</body>
+</html>
